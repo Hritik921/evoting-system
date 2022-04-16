@@ -76,10 +76,11 @@
 <?php
 
 					
-                      $hostname= "localhost";
-                      $username= "root";
-                      $password= "";
-                      $database= "db_evoting";
+                    		$hostname="127.0.0.1:50893";
+				$username= "azure";
+				$password= "6#vWHD_$";
+				$database="db_evoting";
+
 
 
                     
