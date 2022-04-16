@@ -94,10 +94,11 @@
 				{
 					echo "<br>All Field Recquired";
 				}
-				
-       $DB_HOST= "localhost";
-       $DB_USER="root";
-       $DB_PASSWORD="";
+
+			
+       $DB_HOST="127.0.0.1:50893";
+       $DB_USER= "azure";
+       $DB_PASSWORD="6#vWHD_$";
        $DB_NAME="db_evoting";
 	
 
