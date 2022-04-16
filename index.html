@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>E-Sports Awards</title>
+
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+
+    <style>
+
+    body{
+      margin:0px;
+      padding:0px;
+      
+    }
+    .headerFont{
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+      }
+
+      .subFont{
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        
+      }
+      
+      .specialHead{
+        font-family: 'Raleway', sans-serif;
+      }
+
+      .normalFont{
+        font-family: 'Raleway', sans-serif;
+      }
+      input[type=text] {
+    border: 0;
+    background: #f7f7f7;
+   
+    margin: auto;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+    border: 1px solid #535c5c;
+   
+    outline: none;
+    color: rgb(41, 38, 38);
+    border-radius: 4px;
+}
+
+input[type=password] {
+    border: 0;
+    background: #f7f7f7;
+    display: block;
+   
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+    border: 1px solid #535c5c;
+    border-radius: 4px;
+    outline: none;
+    color: rgb(41, 38, 38);
+    
+}
+
+input[type=email] {
+   
+    background: #f7f7f7;
+    display: block;
+       
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+    border: 1px solid #535c5c;
+    border-radius: 4px;
+    
+    outline: none;
+    color: rgb(41, 38, 38);
+   
+}
+
+input[type="text"]:focus {
+    
+    border-color:  #535c5c;
+    text-align: left;
+    
+}
+
+input[type="password"]:focus {
+    border: 2px solid ;
+    border-color:#6f00ff;
+    text-align: left;
+    
+
+}
+input[type="email"]:focus {
+    border: 2px solid ;
+    border-color:#6f00ff;
+    text-align: left;
+    
+}
+      input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px -1px auto;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+
+    background-size: 400%;
+}
+
+input[type="submit"]:hover {
+    font-size: 16px;
+    background-image: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4 );
+
+    animation:  motion 6s linear infinite;
+
+} @keyframes motion{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+input[type=radio] {
+  border: 0px;
+  accent-color: rgb(255, 0, 128);
+  height:3rem ;
+  margin: -0.5rem;
+ 
+  
+}
+strong {
+    font-size:16px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #192036;
+}
+p {
+    font-size:16px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+p1 {
+    font-size:16px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #1a195d;
+}
+::placeholder {
+    color: rgb(137, 137, 137);
+    font-family: 'Raleway', sans-serif;
+}
+
+
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 1000;
+      }
+
+      a:link {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+          color: #FFFFFF;
+          text-decoration: none;
+      }
+
+      /* mouse over link */
+      a:hover {
+          color: #FFFFFF;
+          text-decoration: none;
+      }
+
+      /* selected link */
+      a:active {
+          color: #FFFFFF;
+          text-decoration: none;
+      }
+    </style>
+
+
+    
+  </head>
+  <body>
+	
+	<div class="container">
+  	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse
+    " role="navigation">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+          
+          <a href="index.html" class="navbar-brand headerFont text-lg">eVoting</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="example-nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            <li><a href="#featuresTab"><span class="subFont"><strong>Features</strong></span></a></li>
+            <li><a href="#aboutTab"><span class="subFont"><strong>About</strong></span></a></li>
+            <li><a href="#feedbackTab"><span class="subFont"><strong>Feedback</strong></span></a></li>
+        	
+          </ul>
+          
+
+          <span class="normalFont"><a href="admin.html" class="btn btn-success navbar-right navbar-btn"><strong>Admin Panel</strong></a></span>
+        </div>
+
+      </div> 
+    </nav>
+    </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="jumbotron text-center text-block" style="padding-top:170px;">
+              <img src="images/Vote4454.png" alt="">
+                  <h1 class="specialHead"> E-SPORTS VOTING</h1>
+                  <p class="normalFont">Safe .Interactive. Reliable . Fast </p>
+
+                  <a href="vault.html" class="btn btn-primary btn-md specialHead"> <span class="glyphicon glyphicon-tags"></span> Register Your Vote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="conatiner" id="featuresTab">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="page-header" style="padding-top:50px;padding-bottom:50px">
+              <h1 class="normalFont" style="font-size:44px;" >WHAT'S IN IT !!</h1>
+              <p1 class="subFont" style="font-size:24px;"><em>An Intractive Way To Select your Favourties.</em></p1>
+              <br>
+              <br>
+              <div class="col-sm-4 text-center">
+            
+                <img src="images/vv.png" width="140" height="110" alt=""/>
+                <h2 class="normalFont" style="font-size:28px;">VOTE ONLINE.</h2>
+                <p1><em>SIMPLY</em></p>
+                <p1><em>Just Enter Basic Details of yours and you can Vote.</em></p1>
+    
+              </div>
+              <div class="col-sm-4 text-center">
+                <a href="nomin.html" class="normalFont" style="font-size:28px;">
+                <img src="images/im1.jpg" width="140" height="110" alt=""/>
+                </a>
+                <a href="nomin.html" class="normalFont" style="font-size:28px;"><h2 style="color: black">Nomination</h2></a>
+                <p1><em>List and Details about the filled nomination.</em></p1>
+    
+              </div>
+              <div class="col-sm-4 text-center"> 
+                
+                <img src="images/192.jpg" width="140" height="110" alt=""/>
+                <h2 class="normalFont" style="font-size:28px;" >Statitics</h2>
+                <p1><em>Shows the Graphical Respresentation of the Current Voting.</em></p1>
+                <p1 style="color: #ca0a5a"><em><strong>*ONLY ADMIN CAN ACCESS*</strong></em></p1>
+                <br>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="conatiner" style="padding:50px;" id="aboutTab">
+        <div class="row">
+          <div class="col-sm-4 text-center"> 
+          <p1 class="normalFont" style="font-size:28px;">About Us: </p1>
+          <em style="font-size:20px;">Esports Awards 2020 this year also have a Esports  Game Of The year category, 
+            .The early event attracts the best and the most 
+            popular esports figures out there from journalists,editors to developers.</em>
+          
+          </div>
+          <img src="images/about.jpg" width="800" height="200" alt=""  style="float:right">
+          
+
+          
+         
+        </div>
+      </div>
+      <br>
+      <br>
+        <hr>
+        <div class="container" id="feedbackTab">
+          <div class="row">
+            <div class="col-sm-12 text-center" style= >
+              <div class="page-header" style="padding-top:30px;padding-bottom:30px;">
+                <img src="images/contact.jpg" width="500" height="150" alt="">
+                <br>
+                <h1 class="specialHead">CONTACT</h1>
+                <p1 style="font-size:16px;">If You have any suggestion regarding our voting system. We 'll welcome your suggestion,</p1>
+                
+              
+                <br>
+                <a href="feedbackreport.php" class="btn btn-info"> <strong>Feedback</strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <br>
+      <br>
+      <pre></pre>
+      <footer>
+        <div class="container">
+          
+            <div class="col-sm-6 text-center">
+              <em style="font-size:20px;">Follow us For more   : </em>
+              <a href="https://www.facebook.com" target="_blank">
+              <img src="images/Facebook.png" width="50" height="50" alt="">
+              </a>
+
+              <a href="https://twitter.com" target=_blank>
+              <img src="images/Twitter.png" width="50" height="50" alt="">
+              </a>  
+
+              <a href="https://www.youtube.com" target="_blank">
+              <img src="images/youtube.png" width="50" height="50" alt="">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+    
+    
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

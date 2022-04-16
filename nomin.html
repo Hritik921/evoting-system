@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Nomination Panel</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+
+    <style>
+      .headerFont{
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+      }
+
+      .subFont{
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        
+      }
+      
+      .specialHead{
+        font-family: 'Raleway', sans-serif;
+      }
+
+      .normalFont{
+        font-family: 'Raleway', sans-serif;
+      }
+      input[type=text] {
+    border: 0;
+    background: #f7f7f7;
+   
+    margin: auto;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+    border: 1px solid #535c5c;
+   
+    outline: none;
+    color: rgb(41, 38, 38);
+    border-radius: 4px;
+}
+
+input[type=password] {
+    border: 0;
+    background: #f7f7f7;
+    display: block;
+   
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+    border: 1px solid #535c5c;
+    border-radius: 4px;
+    outline: none;
+    color: rgb(41, 38, 38);
+    
+}
+
+input[type=email] {
+   
+    background: #f7f7f7;
+    display: block;
+       
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+    border: 1px solid #535c5c;
+    border-radius: 4px;
+    
+    outline: none;
+    color: rgb(41, 38, 38);
+   
+}
+
+input[type="text"]:focus {
+  border: 2px solid ; 
+    border-color:  #6f00ff;
+    text-align: left;
+    
+}
+
+input[type="password"]:focus {
+    border: 2px solid ;
+    border-color:#6f00ff;
+    text-align: left;
+    
+
+}
+input[type="email"]:focus {
+    border: 2px solid ;
+    border-color:#6f00ff;
+    text-align: left;
+    
+}
+      input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px -1px auto;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+
+    background-size: 400%;
+}
+
+input[type="submit"]:hover {
+    font-size: 16px;
+    background-image: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4 );
+
+    animation:  motion 6s linear infinite;
+
+} @keyframes motion{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+input[type=radio] {
+  border: 0px;
+  accent-color: rgb(255, 0, 128);
+  height:3rem ;
+  margin: -0.5rem;
+ 
+  
+}
+strong {
+    font-size:16px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #192036;
+}
+p {
+    font-size:16px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+p1 {
+    font-size:16px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #1a195d;
+}
+::placeholder {
+    color: rgb(137, 137, 137);
+    font-family: 'Raleway', sans-serif;
+}
+a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: 1000;
+      }
+
+      a:link {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      /* visited link */
+      a:visited {
+          color: #FFFFFF;
+          text-decoration: none;
+      }
+
+      /* mouse over link */
+      a:hover {
+          color: #FFFFFF;
+          text-decoration: none;
+      }
+
+      /* selected link */
+      a:active {
+          color: #FFFFFF;
+          text-decoration: none;
+      }
+    </style>
+
+
+   
+  </head>
+  <body>
+	
+	<div class="container">
+  	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse
+    " role="navigation">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand headerFont text-lg">eVoting</a>
+        </div>
+
+        <div class="navbar-header">
+                    <ul class="nav navbar-nav">
+            
+             <li><a href="nomin.html"><span class="subFont">Nomination's List</span></a></li>
+
+          
+          </ul>
+</div>
+
+        <div class="collapse navbar-collapse" id="example-nav-collapse">
+          <ul class="nav navbar-nav">
+           
+          </ul>
+          
+<span class="normalFont"><a href="admin.html" class="btn btn-success navbar-right navbar-btn"><strong>Admin Panel</strong></a></span>
+        </div>
+
+      </div> 
+    </nav>
+
+    <div class="container" style="padding:100px;">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="images/cs.jpg" class="img img-thumbnail" style="width:200px;height:200px;" alt="">
+          <h4 class="normalFont text-center">CS : GO</h4>
+          <h5 class="normalFont text-center">Counter-Strike: Global Offensive is a multiplayer first-person shooter video game developed by 
+            Valve and Hidden Path Entertainment.</h5>
+          <hr>
+          <ul class="normalFont text-left">
+             <li>Counter-Strike pioneered when it launched in 1999. Two teams 
+            compete in multiple rounds of objective-based game modes with the goal of winning enough rounds to win the match.</li>
+
+            <li>Features new maps, characters, and weapons and delivers updated versions of the classic Counter-Strike maps 
+            like Dust, Inferno, Nuke, Train, and more.</li>
+            <li> In addition, CS:GO introduces new game modes like Arms Race, Flying Scoutsman 
+              and Wingman, and features online matchmaking and Competitive Skill Groups.</li></li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+          
+          <img src="images/lol.jpg" class="img img-thumbnail" style="width:200px;height:200px;" alt="">
+          <h4 class="normalFont text-center">League of Legends</h4>
+          <h5 class="normalFont text-center">League of Legends is a 2009 multiplayer online battle arena video game developed and published by 
+            Riot Games for Microsoft Windows and macOS.
+            <hr>
+            <ul class="text-left">
+              <li>League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other’s base.
+                 </li>
+              
+              <li>Choose from over 140 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.</li>
+              <li>Legends is a complex game which involves both high-level strategy and fast-paced gameplay.</li>
+            </ul>
+            
+          
+        </div>
+        <div class="col-sm-3">
+          <img src="images/dota.jpg" class="img img-thumbnail" style="width:200px;height:200px;" alt="">
+          <h4 class="normalFont text-center">DOTA 2</h4>
+          <h5 class="text-center normalFont">Dota 2 is a multiplayer online battle arena video game developed and published by Valve.
+             The game is a sequel to Defense of the Ancients</h5>
+          <hr>
+          <ul class="text-left normalFont">
+            <li>Dota 2 is a multiplayer online battle arena (MOBA) video game in which two teams of five 
+              players compete to collectively destroy a large structure defended by the opposing team known as the "Ancient"</li>
+            <li>Dota 2 is extremely famous for its strategy-based gameplay.</li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <img src="images/fortnite.jpg" class="img img-thumbnail" style="width:200px;height:200px;" alt="">
+          <h4 class="normalFont text-center">Fortnite</h4>
+          <h5 class="normalFont text-center">Fortnite is an online video game developed by Epic Games and released in 2017.</h5>
+          <hr>
+          <ul class="text-left normalFont">
+              <li>Fortnite Battle Royale is a game of survival, which means in order to win, you must 
+                defeat the other 99 online players in the game. </li>
+              
+              <li>The games colourful animations and the graphics will appeal to younger users.</li> 
+              <li>Epic Games quite cleverly tease gamers with new updates, new offers and new ways to play. </li>
+              <li> Fortnite will soon be released on mobile devices. Users can unlock new items for free 
+              by continuing to play the game free of charge, and vc.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
