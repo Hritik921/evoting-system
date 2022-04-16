@@ -1,8 +1,8 @@
 				<?php
 
-				$hostname="localhost";
-				$username= "root";
-				$password= "";
+				$hostname="127.0.0.1:50893";
+				$username= "azure";
+				$password= "6#vWHD_$";
 				$database="db_evoting";
 
 				
