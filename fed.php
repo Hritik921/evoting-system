@@ -77,7 +77,7 @@
 	$feedback=$_POST['feedback'];
 			
 			
-	$con=mysqli_connect("127.0.0.1:50893","azure","6#vWHD_$","db_evoting");
+	$con=mysqli_connect("127.0.0.1:49802","azure","6#vWHD_$","db_evoting");
 	if($con)
 		{
 		$sql = "INSERT INTO feed (voterid , fed) values('$voterid' , '$feedback')";
