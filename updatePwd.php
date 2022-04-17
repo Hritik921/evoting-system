@@ -76,7 +76,7 @@
 <?php
 
 					
-                    		$hostname="127.0.0.1:50893";
+                    		$hostname="127.0.0.1:49802";
 				$username= "azure";
 				$password= "6#vWHD_$";
 				$database="db_evoting";
